@@ -214,8 +214,8 @@ function checkICal(urlOrFile, user, pass, sslignore, calName, filter, cb) {
                 if (data) {
                     adapter.log.info('processing URL: ' + calName + ' ' + urlOrFile);
                     adapter.log.debug(JSON.stringify(data));
-                    const realnow    = new Date();
-                    const today      = new Date();
+                    const realnow    = new Date() - 7;
+                    const today      = new Date() - 7;
                     today.setHours(0, 0, 0, 0);
                     const endpreview = new Date();
                     endpreview.setDate(endpreview.getDate() + parseInt(adapter.config.daysPreview, 10));
