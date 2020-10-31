@@ -1,10 +1,10 @@
 {
-  "name": "iobroker.ical",
-  "version": "1.7.4",
+  "name": "iobroker.icalz",
+  "version": "9.7.4",
   "description": "Allows read information from google calender and from iCal.",
   "author": {
-    "name": "bluefox",
-    "email": "dogafox@gmail.com"
+    "name": "zage",
+    "email": "zage@gmail.com"
   },
   "contributors": [
     {
@@ -21,11 +21,11 @@
   "keywords": [
     "ioBroker",
     "calendar",
-    "iCal"
+    "iCalZ"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/ioBroker/ioBroker.ical"
+    "url": "https://github.com/Zage83/ioBroker.ical"
   },
   "dependencies": {
     "@iobroker/adapter-core": "^2.4.0",
