@@ -1,7 +1,7 @@
 {
     "common": {
         "name": "icalz",
-        "version": "9.7.4",
+        "version": "9.7.5",
         "news": {
             "9.7.4": {
                 "en": "Fix multiple parsing",

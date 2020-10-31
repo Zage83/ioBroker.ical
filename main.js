@@ -215,7 +215,7 @@ function checkICal(urlOrFile, user, pass, sslignore, calName, filter, cb) {
                     adapter.log.info('processing URL: ' + calName + ' ' + urlOrFile);
                     adapter.log.debug(JSON.stringify(data));
                     const realnow    = new Date() - 7;
-                    const today      = new Date() - 7;
+                    const today      = new Date() - 7;Y
                     today.setHours(0, 0, 0, 0);
                     const endpreview = new Date();
                     endpreview.setDate(endpreview.getDate() + parseInt(adapter.config.daysPreview, 10));
@@ -585,6 +585,8 @@ function checkForEvents(reason, today, event, realnow) {
             // check if event should shown
             result = ev.display;
             adapter.log.debug('found event in table: ' + ev.name);
+
+            adapter.log.info('Event Start: ' + ev.start + ' - Real now: ' + realnow + ' - Today: ' + today);
 
             // If full day event
             // Follow processing only if event is today
