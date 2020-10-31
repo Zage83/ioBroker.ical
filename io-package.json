@@ -1,8 +1,20 @@
 {
     "common": {
-        "name": "ical",
-        "version": "1.7.4",
+        "name": "icalz",
+        "version": "9.7.4",
         "news": {
+            "9.7.4": {
+                "en": "Fix multiple parsing",
+                "de": "Zage 7d",
+                "ru": "Исправить множественный разбор",
+                "pt": "Corrigir análise múltipla",
+                "nl": "Herstel meerdere parsing",
+                "fr": "Correction de l'analyse multiple",
+                "it": "Correzione di più analisi",
+                "es": "Corregir análisis múltiple",
+                "pl": "Napraw wielokrotne analizowanie",
+                "zh-cn": "修复多个解析"
+            },
             "1.7.4": {
                 "en": "Fix multiple parsing",
                 "de": "Mehrfachanalyse korrigieren",
@@ -61,10 +73,10 @@
                 "pl": "Naprawiono nieprawidłowy kod HTML z wyłączonymi kolorami\nNaprawiono obsługę strefy czasowej zdarzeń podczas zmiany czasu z letniego na zimowy\nNaprawiono: zdarzenia bez daty zakończenia przeniesione do innego dnia"
             }
         },
-        "title": "iCal Calendar",
+        "title": "iCalZ Calendar",
         "titleLang": {
-            "en": "iCal Calendar",
-            "de": "iCal Kalender",
+            "en": "iCalZ Calendar",
+            "de": "iCalZ Kalender",
             "ru": "Календарь iCal",
             "pt": "Calendário iCal",
             "nl": "iCal-agenda",
@@ -75,7 +87,7 @@
         },
         "desc": {
             "en": "This adapter allows to read .ics files from specific URL and parse it (Google Calendar or iCal)",
-            "de": "iCal liest Kalender Files im .ics Format von einer URL (Google Calendar oder iCal)",
+            "de": "iCalZ liest Kalender Files im .ics Format von einer URL (Google Calendar oder iCal)",
             "ru": "iCal читает файлы в формате .ics по URL адресу (Google Calendar или iCal)",
             "pt": "Este adaptador permite ler arquivos .ics de URL específico e analisá-lo (Google Calendar ou iCal)",
             "nl": "Met deze adapter kunnen .ics-bestanden van een specifieke URL worden gelezen en geanalyseerd (Google Calendar of iCal)",
@@ -104,7 +116,7 @@
         "compact": true,
         "keywords": [
             "web",
-            "iCal",
+            "iCalZ",
             "calendar"
         ],
         "allowInit": true,
