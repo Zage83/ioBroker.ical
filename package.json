@@ -1,6 +1,6 @@
 {
   "name": "iobroker.icalz",
-  "version": "9.7.5",
+  "version": "9.7.6",
   "description": "Allows read information from google calender and from iCal.",
   "author": {
     "name": "zage",
