@@ -25,6 +25,12 @@ Siehe deutsche [Version hier](docs/de/README.md).
 
 ## Changelog
 
+### 9.7.6
+
+### 9.7.5
+
+### __WORK IN PROGRESS__
+
 ### 1.7.4 (2020-08-26)
 * (Apollon77) Fix multiple parsing
 

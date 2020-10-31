@@ -305,7 +305,7 @@ function processData(data, realnow, today, endpreview, now2, calName, filter, cb
                     );
                 }
 
-                adapter.log.debug('dates:' + JSON.stringify(dates));
+                adapter.log.info('dates:' + JSON.stringify(dates));
                 // event within the time window
                 if (dates.length > 0) {
                     for (let i = 0; i < dates.length; i++) {

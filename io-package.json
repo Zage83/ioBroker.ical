@@ -3,6 +3,30 @@
         "name": "icalz",
         "version": "9.7.6",
         "news": {
+            "9.7.6": {
+                "en": "Fix multiple parsing",
+                "de": "Zage 7d",
+                "ru": "Исправить множественный разбор",
+                "pt": "Corrigir análise múltipla",
+                "nl": "Herstel meerdere parsing",
+                "fr": "Correction de l'analyse multiple",
+                "it": "Correzione di più analisi",
+                "es": "Corregir análisis múltiple",
+                "pl": "Napraw wielokrotne analizowanie",
+                "zh-cn": "修复多个解析"
+            },
+            "9.7.5": {
+                "en": "Fix multiple parsing",
+                "de": "Zage 7d",
+                "ru": "Исправить множественный разбор",
+                "pt": "Corrigir análise múltipla",
+                "nl": "Herstel meerdere parsing",
+                "fr": "Correction de l'analyse multiple",
+                "it": "Correzione di più analisi",
+                "es": "Corregir análisis múltiple",
+                "pl": "Napraw wielokrotne analizowanie",
+                "zh-cn": "修复多个解析"
+            },
             "9.7.4": {
                 "en": "Fix multiple parsing",
                 "de": "Zage 7d",
