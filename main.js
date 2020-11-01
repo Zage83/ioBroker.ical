@@ -214,6 +214,7 @@ function checkICal(urlOrFile, user, pass, sslignore, calName, filter, cb) {
                 if (data) {
                     adapter.log.info('processing URL: ' + calName + ' ' + urlOrFile);
                     adapter.log.debug(JSON.stringify(data));
+                    
                     const realnow    = new Date();
                     realnow.setDate(realnow.getDate() - 7);
                     adapter.log.info('realnow: "' + realnow + '"');
@@ -222,7 +223,7 @@ function checkICal(urlOrFile, user, pass, sslignore, calName, filter, cb) {
                     today.setHours(0, 0, 0, 0);
                     
                     today.setDate(today.getDate() - 7);
-                    adapter.log.info('today: "' + reatodaylnow + '"');
+                    adapter.log.info('today: "' + today + '"');
                     
                     const endpreview = new Date();
                     endpreview.setDate(endpreview.getDate() + parseInt(adapter.config.daysPreview, 10));
