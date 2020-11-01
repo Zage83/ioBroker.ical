@@ -216,14 +216,11 @@ function checkICal(urlOrFile, user, pass, sslignore, calName, filter, cb) {
                     adapter.log.debug(JSON.stringify(data));
                     
                     const realnow    = new Date();
-                    realnow.setDate(realnow.getDate() - 7);
-                    adapter.log.info('realnow: "' + realnow + '"');
+                    //realnow.setDate(realnow.getDate() - 7);
+                   //adapter.log.info('realnow: "' + realnow + '"');
                     
                     const today      = new Date();
                     today.setHours(0, 0, 0, 0);
-                    
-                    today.setDate(today.getDate() - 7);
-                    adapter.log.info('today: "' + today + '"');
                     
                     const endpreview = new Date();
                     endpreview.setDate(endpreview.getDate() + parseInt(adapter.config.daysPreview, 10));
@@ -479,7 +476,11 @@ function checkDates(ev, endpreview, today, realnow, rule, calName, filter) {
     } else {
         // Event with time
         // Start time >= today && Start time < preview time && End time >= now
-        if ((ev.start >= today && ev.start < endpreview && ev.end >= realnow) || (ev.end >= realnow && ev.end <= endpreview) || (ev.start < realnow && ev.end > realnow)) {
+        //if ((ev.start >= today && ev.start < endpreview && ev.end >= realnow) || (ev.end >= realnow && ev.end <= endpreview) || (ev.start < realnow && ev.end > realnow)) {
+
+        //ZAGE
+        if ((ev.start >= (today-7) && ev.start < (endpreview-7) && ev.end >= realnow) || (ev.end >= realnow && ev.end <= endpreview) || (ev.start < realnow && ev.end > realnow)) {
+
             // Add to list only if not hidden
             if (checkForEvents(reason, today, ev, realnow)) {
                 date = formatDate(ev.start, ev.end, true, false);
