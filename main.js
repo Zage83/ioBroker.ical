@@ -216,19 +216,23 @@ function checkICal(urlOrFile, user, pass, sslignore, calName, filter, cb) {
                     adapter.log.debug(JSON.stringify(data));
                     
                     const realnow    = new Date();
-                    //realnow.setDate(realnow.getDate() - 7);
-                   //adapter.log.info('realnow: "' + realnow + '"');
+                    realnow.setDate(realnow.getDate() - 7);
+                    adapter.log.info('realnow: "' + realnow + '"');
                     
                     const today      = new Date();
+                    today.setDate(today.getDate() - 7);
                     today.setHours(0, 0, 0, 0);
+                    adapter.log.info('today: "' + today + '"');
                     
                     const endpreview = new Date();
                     endpreview.setDate(endpreview.getDate() + parseInt(adapter.config.daysPreview, 10));
 
                     const now2 = new Date();
+                    now2.setDate(now2.getDate() - 7);
 
                     // clear time
                     now2.setHours(0, 0, 0, 0);
+                    adapter.log.info('now2: "' + today + '"');
 
                     setImmediate(() =>
                         processData(data, realnow, today, endpreview, now2, calName, filter, cb));
