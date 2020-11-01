@@ -216,9 +216,14 @@ function checkICal(urlOrFile, user, pass, sslignore, calName, filter, cb) {
                     adapter.log.debug(JSON.stringify(data));
                     const realnow    = new Date();
                     realnow.setDate(realnow.getDate() - 7);
+                    adapter.log.info('realnow: "' + realnow + '"');
                     
                     const today      = new Date();
                     today.setHours(0, 0, 0, 0);
+                    
+                    today.setDate(today.getDate() - 7);
+                    adapter.log.info('today: "' + reatodaylnow + '"');
+                    
                     const endpreview = new Date();
                     endpreview.setDate(endpreview.getDate() + parseInt(adapter.config.daysPreview, 10));
 
