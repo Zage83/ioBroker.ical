@@ -213,7 +213,7 @@ function checkICal(urlOrFile, user, pass, sslignore, calName, filter, cb) {
             ical.parseICS(_data, (err, data) => {
                 if (data) {
                     adapter.log.info('processing URL: ' + calName + ' ' + urlOrFile);
-                    adapter.log.info(JSON.stringify(data));
+                    adapter.log.debug(JSON.stringify(data));
                     const realnow    = new Date();
                     const today      = new Date();
                     today.setHours(0, 0, 0, 0);
@@ -332,7 +332,7 @@ function processData(data, realnow, today, endpreview, now2, calName, filter, cb
                                 const dd = new Date(ev2.exdate[d]);
                                 if (dd.getTime() === ev2.start.getTime()) {
                                     checkDate = false;
-                                    adapter.log.debug('   ' + i + ': sort out');
+                                    adapter.log.info('   ' + i + ': sort out');
                                     break;
                                 }
                             }
