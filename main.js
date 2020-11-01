@@ -476,11 +476,7 @@ function checkDates(ev, endpreview, today, realnow, rule, calName, filter) {
     } else {
         // Event with time
         // Start time >= today && Start time < preview time && End time >= now
-        //if ((ev.start >= today && ev.start < endpreview && ev.end >= realnow) || (ev.end >= realnow && ev.end <= endpreview) || (ev.start < realnow && ev.end > realnow)) {
-
-        //ZAGE
-        if ((ev.start >= (today-7) && ev.start < (endpreview-7) && ev.end >= realnow) || (ev.end >= realnow && ev.end <= endpreview) || (ev.start < realnow && ev.end > realnow)) {
-
+        if ((ev.start >= today && ev.start < endpreview && ev.end >= realnow) || (ev.end >= realnow && ev.end <= endpreview) || (ev.start < realnow && ev.end > realnow)) {
             // Add to list only if not hidden
             if (checkForEvents(reason, today, ev, realnow)) {
                 date = formatDate(ev.start, ev.end, true, false);
